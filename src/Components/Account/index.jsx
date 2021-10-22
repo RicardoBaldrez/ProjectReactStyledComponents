@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 
+import styled from 'styled-components';
+
 import privado from "../../assets/images/privado.svg";
 import olho_icone from "../../assets/images/olho.svg";
 import dinheiro from "../../assets/images/dinheiro.svg";
 
 import { Icon } from '../UI/index';
+
+const HerintageIconPlusMargin = styled(Icon)`
+  margin-top: "2px";
+`;
 
 const Account = () => {
   const [toggleState, untoggle] = useState(true);
@@ -29,8 +35,7 @@ const Account = () => {
       </div>
 
       <button className="btn" onClick={toggleHandler}>
-        <Icon
-          style={{ marginTop: "2px" }}
+        <HerintageIconPlusMargin
           src={toggleState ? privado : olho_icone}
           alt="Privacidade do Saldo"
         />
