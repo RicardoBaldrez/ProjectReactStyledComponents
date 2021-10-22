@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Title from "../Title";
 import Account from "../Account";
+import Extract from '../Extract';
 
 const Container = styled.div`
   background-color: #f1f1f1;
@@ -27,6 +28,7 @@ export default () => {
       <Title>Olá Fulano!</Title>
       <Content>
         <Account />
+        <Extract />
       </Content>
     </Container>
   );
