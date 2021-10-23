@@ -2,8 +2,7 @@ import React from 'react'
 
 import { Box, Button } from '../UI/index';
 import { listExtract } from '../../info';
-
-console.log(listExtract);
+import Items from '../Items';
 
 const Extract = () => {
   return(
@@ -11,12 +10,7 @@ const Extract = () => {
       {
         listExtract.updates.map(({id, type, from, value, date}) => {
           return(
-            <div key={id}>
-              <p>{type}</p>
-              <p>{from}</p>
-              <p>{value}</p>
-              <p>{date}</p>
-            </div>
+              <Items key={id} type={type} from={from} value={value} date={date} />
           );
         })
       }
