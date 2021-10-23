@@ -3,14 +3,16 @@ import React from "react";
 import Header from "./Components/Header";
 import Container from "./Components/Container";
 import { GlobalStyle } from './Components/GlobalStyle';
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from './Components/UI/themes'
 
 function App() {
   return (
-    <>
-        <GlobalStyle />
-        <Header />
-        <Container />
-    </>
+    <ThemeProvider theme={darkTheme}>
+      <GlobalStyle />
+      <Header />
+      <Container />
+    </ThemeProvider>
   );
 }
 
