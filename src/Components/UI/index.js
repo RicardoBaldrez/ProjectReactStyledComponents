@@ -44,3 +44,12 @@ export const Balance = styled.div`
   font-weight: 700;
   font-size: 32px;
 `;
+
+export const ChangeThemeButton = styled.button`
+  position: absolute;
+  top: 4vh;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+`;
