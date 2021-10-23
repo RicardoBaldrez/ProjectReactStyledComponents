@@ -6,7 +6,7 @@ import privado from "../../assets/images/privado.svg";
 import olho_icone from "../../assets/images/olho.svg";
 import dinheiro from "../../assets/images/dinheiro.svg";
 
-import { Icon, Box, Button, Details, Balance } from '../UI/index';
+import { Icon, Box, Button, Details, Balance, IconTheme } from '../UI';
 
 const HerintageIconPlusMargin = styled(Icon)`
   margin-top: "2px";
@@ -25,7 +25,7 @@ const Account = () => {
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
         <span>
-          <Icon src={dinheiro} alt="Ícone Saldo" />
+          <IconTheme src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
           <Balance>
