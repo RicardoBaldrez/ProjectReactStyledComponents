@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Item from '../Item'
+import ImageFilter from '../ImageFilter';
 
 const Items = styled.div`
   margin: 2px;
@@ -18,6 +19,7 @@ const Items = styled.div`
 export default (props) => {
   return (
     <Items>
+      { ImageFilter(props.type) }
       <Item { ...props } />
       <span>{props.date}</span>
     </Items>
