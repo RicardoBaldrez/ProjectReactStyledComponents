@@ -7,4 +7,4 @@ import { Icon } from '../UI'
 const light = <Icon src={ThemeOn} alt="Light theme" />
 const dark = <Icon src={ThemeOff} alt="Dark theme" />
 
-export default (({ theme }) => theme ? dark : light)
+export default (({ theme }) => theme ? light : dark)
